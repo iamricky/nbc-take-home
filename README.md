@@ -116,7 +116,7 @@ const getValue = (id, arr = data) => {
 
   for (let i = 0; i < arr.length; i++) {
     const obj = arr[i];
-    if (obj.id === id) return obj.value;
+    if (obj.id === id) return obj;
     if (obj.children) {
       const { children } = obj;
       childArr = [...childArr, ...children];
