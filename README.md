@@ -46,7 +46,7 @@ const convertToPigLatin = str => {
             let finalWord = `${arr.join('')}ay`;
             
             return test.willCapitalize(finalWord, first);
-        });
+        }).join(' ');
 }; 
 ```
 
